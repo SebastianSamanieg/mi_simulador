@@ -1,0 +1,24 @@
+/* Establecer la imagen de fondo y ajustar los estilos */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/fondogalaxia.jpg'); /* Usar url() para especificar la ruta de la imagen de fondo */
+    background-size: cover; /* Cubrir toda la ventana del navegador */
+    background-position: center center; /* Centrar la imagen de fondo */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen de fondo */
+}
+
+
+.simular{
+    height: 400px;
+    background-color: aqua;
+}
+
+.balon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: brown;
+    position: fixed;
+}
+
