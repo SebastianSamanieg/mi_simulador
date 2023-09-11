@@ -1,6 +1,7 @@
     // Valores de gravedad en m/s^2
 
     let gavityPlanet = new Map();
+    gavityPlanet.set("sun", 274)
     gavityPlanet.set("mercury", 3.7)
     gavityPlanet.set("venus", 8.87)
     gavityPlanet.set("earth", 9.81)

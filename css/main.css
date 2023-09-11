@@ -8,17 +8,25 @@ body {
     background-repeat: no-repeat; /* Evitar la repetición de la imagen de fondo */
 }
 
+.general_title {
+    color: azure;
+}
+
+.note {
+    color: azure;
+}
 
 .simular{
     height: 400px;
-    background-color: aqua;
+    background-image: url(../images/montañas.png);
 }
 
-.balon{
-    height: 30px;
-    width: 30px;
+.balon {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/meteoro.png);
+    background-size: cover;
     border-radius: 50%;
-    background-color: brown;
     position: fixed;
 }
 
