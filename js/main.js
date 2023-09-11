@@ -19,13 +19,31 @@
         $("#exampleModalLabel").text(planet)
     }
 
-    function simular(){
-        count = 0 
-        setInterval(function(){
-            count = count + 2
-            document.querySelector(".balon").style.marginTop = count+"px"
-
-            $(".data").text(count)
-
-                }, miPlaneta *50)
+    function simular() {
+        let distance = 0;
+        let time = 0;
+        const interval = 100; // Intervalo de tiempo en milisegundos (ajústalo según tu necesidad)
+    
+        const intervalId = setInterval(function () {
+            time += interval / 1000; // Convertir el intervalo a segundos
+            distance = (1 / 2) * miPlaneta * Math.pow(time, 2); // Aplicar la fórmula de caída libre
+            document.querySelector(".balon").style.marginTop = distance + "px";
+            $(".data").text(distance.toFixed(2)); // Mostrar la distancia con dos decimales
+    
+            // Detener la simulación cuando el balón toque el suelo
+            if (distance >= 350) {
+                clearInterval(intervalId);
+            }
+        }, interval);
     }
+
+    document.getElementById("reiniciarBtn").addEventListener("click", function () {
+        // Restablecer la posición del balón
+        document.querySelector(".balon").style.marginTop = "0px";
+    
+        // Restablecer el tiempo a cero
+        let time = 0;
+    
+        // Actualizar la visualización de la distancia (puedes eliminar esta línea si no es necesaria)
+        $(".data").text("0.00");
+    });

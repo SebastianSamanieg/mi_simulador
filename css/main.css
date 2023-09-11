@@ -30,3 +30,20 @@ body {
     position: fixed;
 }
 
+/* Ajustar el tamaño de las imágenes del carrusel y centrar horizontalmente */
+.carousel-item img {
+    max-width: 100%; /* Ajustar el ancho máximo para evitar el estiramiento */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.custom-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 10px; /* Espacio alrededor del contenido */
+    border-radius: 5px; /* Bordes redondeados */
+    max-width: 60%; /* Ancho máximo para evitar que se extienda demasiado */
+    margin: 20px auto 0; /* Centrar horizontalmente y agregar margen superior (0px) e inferior (20px) */
+    color: white; /* Color del texto */
+}
+
