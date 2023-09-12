@@ -47,3 +47,11 @@
         // Actualizar la visualización de la distancia (puedes eliminar esta línea si no es necesaria)
         $(".data").text("0.00");
     });
+
+    // Agregar un evento click al botón "Planeta personalizado" para mostrar el modal
+document.getElementById("customPlanetBtn").addEventListener("click", function () {
+    // Mostrar el modal
+    var modal = new bootstrap.Modal(document.getElementById("exampleModal"));
+    modal.show();
+  });
+

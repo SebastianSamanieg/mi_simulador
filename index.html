@@ -77,12 +77,6 @@
           data-bs-slide-to="8"
           aria-label="Slide 9"
         ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="9"
-          aria-label="Slide 1"
-        ></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -273,8 +267,25 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      <div class="custom-button">
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button" id="customPlanetBtn">
+            Planeta personalizado
+            <form id="customPlanetForm">
+              <div class="mb-3">
+                <label for="nombrePlaneta" class="form-label">Nombre del planeta</label>
+                <input type="text" class="form-control" id="nombrePlaneta" />
+              </div>
+              <div class="mb-3">
+                <label for="gravedadPlaneta" class="form-label">Gravedad del planeta</label>
+                <input type="text" class="form-control" id="gravedadPlaneta" />
+              </div>
+              <button type="submit" class="info">Submit</button>
+            </form>
+          </button>
+        </div>
+      </div>
     </div>
-
     <!-- Modal -->
     <div
       class="modal fade"
